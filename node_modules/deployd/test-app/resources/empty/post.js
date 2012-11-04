@@ -1,1 +1,0 @@
-cancel('testing cancel');
