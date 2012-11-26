@@ -1,0 +1,15 @@
+<div class="note-bg box animate"></div>
+
+<div class="note-inner animate">
+	<h4><%= title %></h4>
+	<div class="entry">
+		<%= body %>
+	</div>
+	<!-- /.entry -->
+</div>
+<!-- /.note-inner -->
+
+<ul class="notes-nav animate">
+	<li><a href="edit/<%= id %>" class="animate edit" data-icon="&#xe001;" data-id="<%= id %>"></a></li>
+	<li><a href="delete/<%= id %>" class="animate delete" data-icon="&#xe006;" data-id="<%= id %>"></a></li>
+</ul>

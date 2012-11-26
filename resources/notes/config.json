@@ -16,22 +16,6 @@
 			"required": true,
 			"id": "body",
 			"order": 1
-		},
-		"tags": {
-			"name": "tags",
-			"type": "array",
-			"typeLabel": "array",
-			"required": false,
-			"id": "tags",
-			"order": 2
-		},
-		"picture": {
-			"name": "picture",
-			"type": "string",
-			"typeLabel": "string",
-			"required": false,
-			"id": "picture",
-			"order": 3
 		}
 	}
 }

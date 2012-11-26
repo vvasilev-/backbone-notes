@@ -1,0 +1,132 @@
+/*-- Fonts --*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Open+Sans+Condensed:700);
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.svg#icomoon') format('svg'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*-- Reset --*/
+* { padding: 0; margin: 0;  outline: 0; box-sizing: border-box;	}
+
+/*-- Base --*/
+html,
+body { height: 100%; }
+
+html { overflow-y: scroll; }
+
+body { background: #e3e4e2; font-size: 13px; line-height: 1.3; color: #575352; font-family: 'Open Sans', sans-serif; }
+
+a { cursor: pointer; text-decoration: none; color: #018be3; }
+a:hover { text-decoration: none; color: #575352; }
+
+/*-- Form Elements --*/
+select, 
+input, 
+textarea { font-family: 'Open Sans', sans-serif; font-size: 13px; background: #f4f4f3; color: #dbd9d6; border: 2px solid #ddd; width: 100%; padding: 5px; font-weight: bold; border-radius: 2px; box-shadow: 1px 0 0 #ccc inset, 0 1px 0 #ccc inset, -1px 0 0 #ccc inset, 0 -1px 0 #ccc inset; }
+
+textarea { resize: none; overflow: auto; }
+
+select:focus,
+input:focus,
+textarea:focus { background: #fff; box-shadow: 1px 0 0 #c1cb29 inset, 0 1px 0 #c1cb29 inset, -1px 0 0 #c1cb29 inset, 0 -1px 0 #c1cb29 inset; color: #575352; }
+
+/*-- Headings --*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-family: 'Open Sans Condensed', sans-serif; }
+
+h1 { font-size: 50px; text-transform: uppercase; text-shadow: 2px 2px 0 #f3f3f3; padding-bottom: 30px; }
+h2 { font-size: 30px; text-transform: uppercase; padding-bottom: 10px; }
+
+/*-- Helpers --*/
+.left { float: left; }
+.right { float: right; }
+
+.clearfix:before,
+.clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+.animate { 
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in; 
+}
+
+/*-- Fields --*/
+.field { height: 30px; }
+.textarea { height: 150px; }
+
+.field-contain { position: relative; margin-bottom: 10px; }
+.field-contain .field { padding-left: 33px; }
+.field-contain:before { -webkit-font-smoothing: antialiased; position: absolute; top: 3px; left: 3px; content: attr(data-icon); z-index: 1; font-family: 'icomoon'; speak: none; font-weight: normal; width: 24px; height: 24px; background: #f4f4f3; font-size: 16px; text-align: center; line-height: 24px; }
+
+/*-- Containers --*/
+.container { padding-top: 50px; width: 960px; margin: 0 auto; }
+
+.box { background: #fff; border: 2px solid #ddd; border-radius: 2px; box-shadow: 1px 0 0 #ccc inset, 0 1px 0 #ccc inset, -1px 0 0 #ccc inset, 0 -1px 0 #ccc inset; }
+
+/*-- Buttons --*/
+.button { border: 1px solid #aeb728; cursor: pointer; border-radius: 0; box-shadow: none; color: #fff; background: #c1cb29; box-shadow: 1px 0 0 rgba(255,255,255, .4) inset, 0 1px 0 rgba(255,255,255, .4) inset, -1px 0 0 rgba(255,255,255, .4) inset, 0 -1px 0 rgba(255,255,255, .4) inset; width: auto; padding: 5px 10px; }
+.button:hover { background: #b4bd27; }
+.buttn.full { display: block; width: 100%; }
+.button.big { font-size: 20px; font-weight: bold; }
+
+.button.red { background: #c2412f; border-color: #982a31; }
+.button.red:hover { background: #a9392a; }
+
+/*-- Login --*/
+.login { padding-top: 50px; width: 400px; margin: 0 auto; }
+
+/*-- Notes Nav --*/
+.notes-toolbar { background: #fff; border: 2px solid #ddd; width: 100%; font-weight: bold; border-radius: 2px; box-shadow: 1px 0 0 #ccc inset, 0 1px 0 #ccc inset, -1px 0 0 #ccc inset, 0 -1px 0 #ccc inset; margin-bottom: 20px; }
+.notes-nav { list-style: none outside none; }
+.notes-nav li { float: left; }
+.notes-nav a { float: left; background: #c1cb29; color: #fff; width: 32px; height: 32px; font-size: 14px; position: relative; box-shadow: 1px 0 0 rgba(255,255,255, .4) inset, 0 1px 0 rgba(255,255,255, .4) inset, -1px 0 0 rgba(255,255,255, .4) inset, 0 -1px 0 rgba(255,255,255, .4) inset; border: 1px solid #aeb728; }
+.notes-nav a:hover { background: #b4bd27; }
+.notes-nav a:before { -webkit-font-smoothing: antialiased; position: absolute; top: -1px; left: -1px; content: attr(data-icon); z-index: 1; font-family: 'icomoon'; speak: none; font-weight: normal; width: 32px; height: 32px; font-size: 18px; text-align: center; line-height: 32px; } 
+
+/*-- Notes --*/
+.note { position: relative; float: left; width: 300px; margin: 0 30px 30px 0; z-index: 0; }
+.note:nth-child(n+3) { margin-right: 0; }
+.note:nth-child(n+4) { clear: both; }
+.note-bg { position: absolute; width: 100%; top: -3px; bottom: 0; left: -3px; z-index: 0; content: ''; }
+
+.note h4 { font-size: 14px; padding-bottom: 5px; }
+.note-inner { padding: 10px 10px 13px; position: relative; z-index: 1; }
+
+.note .notes-nav { position: absolute; bottom: 2px; right: 5px; opacity: 0; }
+.note .notes-nav a { width: 22px; height: 22px;  }
+.note .notes-nav a:before { width: 22px; height: 22px; line-height: 22px; font-size: 12px; }
+
+.note:hover { z-index: 1; }
+.note:hover .note-bg { bottom: -27px; }
+.note:hover .notes-nav { opacity: 1; bottom: -25px; }
+
+/*-- Notes Form --*/
+.note-form { padding: 20px 20px 25px; width: 600px; position: absolute; top: -100%; left: 50%; margin-left: -321px; z-index: 101; opacity: 0; }
+.note-form .field { margin-bottom: 10px; }
+
+.form-msg { border-radius: 3px; padding: 5px 10px; color: #fff; display: none; margin-bottom: 10px; }
+.form-msg.error { background: #c2412f; }
+.form-msg.success { background: #c1cb29; }
+
+.buttons input { float: right; margin-left: 10px; }
+
+.overlay { position: fixed; top: -100%; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .7); z-index: 100; }
+
+.note-form.visible { top: 15%; opacity: 1; }
+.overlay.visible { top: 0; }
+
+.header .notes-nav { padding: 18px 0 0 35px; }

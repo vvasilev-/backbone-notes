@@ -1,15 +1,61 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<title>Backbone Notes</title>
-	<script data-main="js/main.js" src="js/libs/require/require.js"></script>
+	<link rel="stylesheet" href="css/app.css" media="all">
 </head>
 <body>
-
-	<div class="notes-container">
+<div class="container">
+	<div class="header clearfix">
+		<h1 class="left">Backbone Notes</h1>
 		
-	</div><!-- /.notes-container -->
+		<ul class="notes-nav left">
+			<li><a href="#" class="add animate" data-icon="&#xe011;"></a></li>
+		</ul>
+	</div>
+	<!-- /.header -->
 
+	<div class="notes clearfix">
+		
+	</div>
+	<!-- /.notes -->
+
+	<form action="#" class="box note-form animate">
+		<h2></h2>
+		
+		<div class="form-msg"></div>
+		
+		<input type="text" class="field animate" placeholder="Title" title="Title" />
+		<textarea title="Note" placeholder="Note" class="field textarea animate"></textarea>
+		
+		<div class="buttons clearfix">
+			<input type="submit" class="button animate"  value="Save" title="Save" />
+			<input type="button" class="button red animate" value="Cancel" title="Cancel" />
+		</div>
+	</form>
+	<!-- /.note-form -->
+
+	<div class="overlay animate"></div>
+</div>
+<!-- /.container -->
+	
+<!-- all scripts here for fast page loading -->
+<script src="vendors/require.js"></script>
+<script>
+	// start the app
+	require(['jquery', 'scripts/views/app.js'], function($, App){
+
+		// get new instance
+		var app = new App();
+
+		// render the view
+		app.render();
+
+		// render the app
+		$('body').prepend(app.el);
+
+	});
+</script>
 </body>
 </html>

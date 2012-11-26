@@ -1,0 +1,11 @@
+{
+	"name": "Backbone Notes",
+	"jam" : {
+		"packageDir": "public/vendors",
+		"baseUrl": "public",
+		"dependencies": {
+			"backbone": null,
+			"text": null
+		}
+	}
+}
