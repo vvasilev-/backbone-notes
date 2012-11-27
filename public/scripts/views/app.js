@@ -96,7 +96,7 @@ define(['jquery', 'backbone', 'lodash', 'scripts/collections/notes', 'scripts/vi
 			var title = this.titleField.val();
 			var body = this.bodyField.val();
 
-			if (model != undefined) {
+			if (model != null) {
 
 				model.save({
 					'title': title,
@@ -111,9 +111,6 @@ define(['jquery', 'backbone', 'lodash', 'scripts/collections/notes', 'scripts/vi
 				});
 
 			}
-
-			this.titleField.val('');
-			this.bodyField.val('');
 
 			return false;
 
@@ -137,6 +134,11 @@ define(['jquery', 'backbone', 'lodash', 'scripts/collections/notes', 'scripts/vi
 			this.form.removeClass('visible');
 
 			this.hideMsg();
+
+			this.titleField.val('');
+			this.bodyField.val('');
+
+			this.form.data('id', null);
 
 		},
 
